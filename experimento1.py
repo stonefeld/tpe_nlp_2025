@@ -121,4 +121,12 @@ print(df_results)
 
 sns.heatmap(df_results, annot=True, fmt=".3f", cmap="YlGnBu")
 plt.title("Comparación BoW vs TF-IDF - Regresión Logística")
+plt.tight_layout()
+plt.savefig("experimento1_comparacion.png", dpi=300, bbox_inches="tight")
 plt.show()
+
+# Guardar resultados en CSV
+df_results.index.name = "Modelo"
+df_results.reset_index(inplace=True)
+df_results.to_csv("experimento1_resultados.csv", index=False)
+print("\n✅ Resultados guardados en: experimento1_resultados.csv")
