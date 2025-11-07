@@ -16,5 +16,12 @@ dependencies = [
     "tqdm>=4.67.1",
 ]
 
+[project.optional-dependencies]
+embeddings = [
+    "gensim>=4.0.0",
+    "transformers>=4.30.0",
+    "torch>=2.0.0",
+]
+
 [tool.black]
 line-length = 180
