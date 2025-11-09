@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12.9"
 dependencies = [
+    "accelerate>=1.11.0",
+    "gensim>=4.4.0",
     "jupyter>=1.1.1",
     "matplotlib>=3.10.7",
     "nltk>=3.9.2",
@@ -13,14 +15,9 @@ dependencies = [
     "pyside6>=6.10.0",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
+    "torch>=2.9.0",
     "tqdm>=4.67.1",
-]
-
-[project.optional-dependencies]
-embeddings = [
-    "gensim>=4.0.0",
-    "transformers>=4.30.0",
-    "torch>=2.0.0",
+    "transformers>=4.57.1",
 ]
 
 [tool.black]
